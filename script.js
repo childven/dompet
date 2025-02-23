@@ -84,15 +84,3 @@ window.addEventListener('DOMContentLoaded', () => {
     renderTransactions();
     updateBalance();
 });
-
-function formatCurrency(value) {
-    let formattedValue = value.replace(/\D/g, '');
-    formattedValue = formattedValue.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
-    return formattedValue;
-}
-
-amountInput.addEventListener('input', (event) => {
-    let value = event.target.value;
-    value = formatCurrency(value);
-    amountInput.value = value;
-});
