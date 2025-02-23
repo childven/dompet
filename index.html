@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dompet gua woi</title>
+    <link rel="stylesheet" href="style.css">
+    <body>
+    <br>
+    <div class="container">
+        <header>
+            <br>
+            <h1>Jangan <strong>Boros</strong> ye kocak !</h1>
+            <div id="balance-section">
+                <h2 id="balance">Uang: <strong>Rp 0</strong></h2>
+            </div>
+        </header>
+        <main>
+            <div id="controls">
+                <input type="number" id="amount-input" placeholder="Jumlah uang">
+                <input type="text" id="description-input" placeholder="Deskripsi">
+                <div id="buttons">
+                    <button id="add-income">+ Pendapatan</button>
+                    <button id="reset-transaction">Reset</button>
+                    <button id="add-expense">- Pengeluaran</button>
+                </div>
+            </div>
+            <div id="transaction-history">
+                <h3>Riwayat</h3>
+                <ul id="transaction-list">
+                    <!-- Riwayat transaksi akan ditampilkan di sini -->
+                </ul>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+    </body>
+</html>
